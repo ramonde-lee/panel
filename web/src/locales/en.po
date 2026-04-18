@@ -8702,7 +8702,7 @@ msgstr "Default Backup Directory"
 
 #: src/views/setting/SettingBase.vue:144
 #, fuzzy
-msgid "/opt/ace/backup"
+msgid "/home/backup"
 msgstr "/www/backup"
 
 #: src/views/setting/SettingBase.vue:152
