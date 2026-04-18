@@ -129,7 +129,7 @@ const dotnetOptions = ref({
 })
 
 const showPathSelector = ref(false)
-const pathSelectorPath = ref('/opt/ace/projects')
+const pathSelectorPath = ref('/home/projects')
 const loading = ref(false)
 
 const { data: installedEnvironment } = useRequest(home.installedEnvironment, {
@@ -185,7 +185,7 @@ const generateCommand = () => {
       } else {
         // 二进制模式
         const rootDir =
-          createModel.value.root_dir || `/opt/ace/projects/${createModel.value.name || 'project'}`
+          createModel.value.root_dir || `/home/projects/${createModel.value.name || 'project'}`
         createModel.value.exec_start = `${rootDir}/main`
       }
       break
@@ -289,7 +289,7 @@ watch(
 
 // 处理目录选择
 const handleSelectPath = () => {
-  pathSelectorPath.value = createModel.value.root_dir || '/opt/ace/projects'
+  pathSelectorPath.value = createModel.value.root_dir || '/home/projects'
   showPathSelector.value = true
 }
 
