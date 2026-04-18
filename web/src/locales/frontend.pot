@@ -8567,7 +8567,7 @@ msgid "Default Website Directory"
 msgstr ""
 
 #: src/views/setting/SettingBase.vue:134
-msgid "/opt/ace/sites"
+msgid "/home/www"
 msgstr ""
 
 #: src/views/setting/SettingBase.vue:142
