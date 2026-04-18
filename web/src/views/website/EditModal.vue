@@ -724,8 +724,8 @@ const getRedirectTypeLabel = (type: string) => {
 
 // ========== 高级设置相关（日志设置、限流限速、真实 IP、基本认证）==========
 // 默认日志路径
-const defaultAccessLog = computed(() => `/opt/ace/sites/${setting.value.name}/log/access.log`)
-const defaultErrorLog = computed(() => `/opt/ace/sites/${setting.value.name}/log/error.log`)
+const defaultAccessLog = computed(() => `/home/www/${setting.value.name}/log/access.log`)
+const defaultErrorLog = computed(() => `/home/www/${setting.value.name}/log/error.log`)
 
 // 日志路径选项
 const accessLogOptions = computed(() => [
