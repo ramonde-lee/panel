@@ -8583,7 +8583,7 @@ msgid "Default Project Directory"
 msgstr ""
 
 #: src/views/setting/SettingBase.vue:156
-msgid "/opt/ace/projects"
+msgid "/home/projects"
 msgstr ""
 
 #: src/views/setting/SettingBase.vue:165
