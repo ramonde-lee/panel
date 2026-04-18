@@ -8205,8 +8205,8 @@ msgid "Default Project Directory"
 msgstr "默认项目目录"
 
 #: src/views/setting/SettingBase.vue:156
-msgid "/opt/ace/projects"
-msgstr "/opt/ace/projects"
+msgid "/home/projects"
+msgstr "/home/projects"
 
 #: src/views/setting/SettingBase.vue:165
 msgid "Container Socket"
