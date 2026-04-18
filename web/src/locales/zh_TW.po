@@ -8190,8 +8190,8 @@ msgid "Default Website Directory"
 msgstr "預設網站目錄"
 
 #: src/views/setting/SettingBase.vue:134
-msgid "/opt/ace/sites"
-msgstr "/opt/ace/sites"
+msgid "/home/www"
+msgstr "/home/www"
 
 #: src/views/setting/SettingBase.vue:142
 msgid "Default Backup Directory"
