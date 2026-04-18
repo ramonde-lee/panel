@@ -21,13 +21,13 @@ const pathSelectorTarget = ref<'website' | 'backup' | 'project' | 'ipdb'>('websi
 const handleSelectPath = (target: 'website' | 'backup' | 'project' | 'ipdb') => {
   pathSelectorTarget.value = target
   if (target === 'website') {
-    pathSelectorPath.value = model.value.website_path || '/opt/ace/sites'
+    pathSelectorPath.value = model.value.website_path || '/home/www'
   } else if (target === 'backup') {
-    pathSelectorPath.value = model.value.backup_path || '/opt/ace/backup'
+    pathSelectorPath.value = model.value.backup_path || '/home/backup'
   } else if (target === 'ipdb') {
     pathSelectorPath.value = model.value.ipdb_path || '/opt/ace'
   } else {
-    pathSelectorPath.value = model.value.project_path || '/opt/ace/projects'
+    pathSelectorPath.value = model.value.project_path || '/home/projects'
   }
   showPathSelector.value = true
 }
@@ -131,7 +131,7 @@ const menus = computed<TreeSelectOption[]>(() => {
       </n-form-item>
       <n-form-item :label="$gettext('Default Website Directory')">
         <n-input-group>
-          <n-input v-model:value="model.website_path" :placeholder="$gettext('/opt/ace/sites')" />
+          <n-input v-model:value="model.website_path" :placeholder="$gettext('/home/www')" />
           <n-button @click="handleSelectPath('website')">
             <template #icon>
               <i-mdi-folder-open />
@@ -141,7 +141,7 @@ const menus = computed<TreeSelectOption[]>(() => {
       </n-form-item>
       <n-form-item :label="$gettext('Default Backup Directory')">
         <n-input-group>
-          <n-input v-model:value="model.backup_path" :placeholder="$gettext('/opt/ace/backup')" />
+          <n-input v-model:value="model.backup_path" :placeholder="$gettext('/home/backup')" />
           <n-button @click="handleSelectPath('backup')">
             <template #icon>
               <i-mdi-folder-open />
@@ -153,7 +153,7 @@ const menus = computed<TreeSelectOption[]>(() => {
         <n-input-group>
           <n-input
             v-model:value="model.project_path"
-            :placeholder="$gettext('/opt/ace/projects')"
+            :placeholder="$gettext('/home/projects')"
           />
           <n-button @click="handleSelectPath('project')">
             <template #icon>
