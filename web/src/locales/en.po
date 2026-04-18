@@ -8712,7 +8712,7 @@ msgstr "Select Directory"
 
 #: src/views/setting/SettingBase.vue:156
 #, fuzzy
-msgid "/opt/ace/projects"
+msgid "/home/projects"
 msgstr "/www/backup"
 
 #: src/views/setting/SettingBase.vue:165
