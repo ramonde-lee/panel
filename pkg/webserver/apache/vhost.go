@@ -61,7 +61,7 @@ func newBaseVhost(configDir string) (*baseVhost, error) {
 
 	// 如果没有配置文件，使用默认配置
 	if config == nil {
-		defaultConf := strings.ReplaceAll(DefaultVhostConf, "/opt/ace/sites/default", fmt.Sprintf("/opt/ace/sites/%s", v.siteName))
+		defaultConf := strings.ReplaceAll(DefaultVhostConf, "/home/www/default", fmt.Sprintf("/home/www/%s", v.siteName))
 		config, err = ParseString(defaultConf)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse default config: %w", err)
@@ -352,7 +352,7 @@ func (v *baseVhost) Save() error {
 
 func (v *baseVhost) Reset() error {
 	// 重置配置为默认值
-	defaultConf := strings.ReplaceAll(DefaultVhostConf, "/opt/ace/sites/default", fmt.Sprintf("/opt/ace/sites/%s", v.siteName))
+	defaultConf := strings.ReplaceAll(DefaultVhostConf, "/home/www/default", fmt.Sprintf("/home/www/%s", v.siteName))
 	config, err := ParseString(defaultConf)
 	if err != nil {
 		return fmt.Errorf("failed to reset config: %w", err)
