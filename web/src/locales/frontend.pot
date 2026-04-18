@@ -8575,7 +8575,7 @@ msgid "Default Backup Directory"
 msgstr ""
 
 #: src/views/setting/SettingBase.vue:144
-msgid "/opt/ace/backup"
+msgid "/home/backup"
 msgstr ""
 
 #: src/views/setting/SettingBase.vue:152
